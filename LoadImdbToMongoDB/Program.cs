@@ -39,6 +39,8 @@ namespace LoadImdbToMongoDB
                             long newSize = newFileName.Length;
                             Console.WriteLine("Decompressed: {0}", fileToDecompress);
                             Console.WriteLine("Decompressed file size is " + newSize);
+
+                            //Testing new branch
                         }
 
                     }
