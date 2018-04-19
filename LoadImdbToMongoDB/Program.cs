@@ -6,6 +6,7 @@ using System.Linq;
 using MongoDB.Driver;
 using System.Text;
 using System.Threading.Tasks;
+using MongoDB.Bson;
 
 namespace LoadImdbToMongoDB
 {
@@ -96,7 +97,7 @@ namespace LoadImdbToMongoDB
                     string currentFileName = origFileInfo.FullName;
 
                     IMongoDatabase database = client.GetDatabase("Imdb");
-                    IMongoCollection collection = database.GetCollection<bsonDocument>(""); //TODO: need to change document collection using origfilename
+                    IMongoCollection collection = database.GetCollection<BsonDocument>(""); //TODO: need to change document collection using origfilename
 
                 }
             }
