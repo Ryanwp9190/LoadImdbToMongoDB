@@ -97,7 +97,7 @@ namespace LoadImdbToMongoDB
                     string currentFileName = origFileInfo.FullName;
 
                     IMongoDatabase database = client.GetDatabase("Imdb");
-                    IMongoCollection collection = database.GetCollection<BsonDocument>(""); //TODO: need to change document collection using origfilename
+                    IMongoCollection<BsonDocument> collection = database.GetCollection<BsonDocument>(""); //TODO: need to change document collection using origfilename
 
                 }
             }
